@@ -83,6 +83,7 @@ body {
   font-size: 1.8rem;
   font-weight: 700;
   color: black;
+  text-transform: capitalize;
 }
 
 .action-buttons a:hover {
