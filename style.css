@@ -199,7 +199,16 @@ body {
   height: 54px;
 }
 
+.buttons .selection img {
+  height: 24px;
+}
+
 .buttons .play-pause {
   width: 88px;
   height: 88px;
+}
+
+.buttons .play-pause img {
+  height: 36px;
+  padding-left: 8px;
 }
