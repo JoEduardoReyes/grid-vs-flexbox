@@ -1,12 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 :root {
-  --blue: #eaf0f8;
+  --grey-background: #f2f2f2;
+  --buttons: #636c76;
+  --selection: #439fd9;
+  --hide-grey: #c8c8c8;
+  --texts: #3c454e;
+  --white: #fff;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
   margin: 0;
-  background: var(--blue);
+  background: var(--grey-background);
   font-family: "Roboto", sans-serif;
 }
 
@@ -18,8 +27,79 @@ body {
   margin: 0 auto;
 }
 
+/* header */
+
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header div {
+  width: 42px;
+  height: 42px;
+  box-shadow: -2px -2px 4px #ffffff, 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.header div:first-child img {
+  height: 25px;
+}
+
+.header div:last-child img {
+  height: 25px;
+}
+
+.header p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--texts);
+}
+
+/* Cards section */
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cards div:first-child {
+  width: 340px;
+  height: 340px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25),
+    -10px -10px 15px rgba(255, 255, 255, 0.5);
+  background-image: url("https://i.ibb.co/r3TwgvT/3d279d323a4f032e70b36e2dc32daf67.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cards div p {
+  text-align: center;
+  margin: 0;
+}
+
+.cards div p:first-child {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 45px;
+  color: var(--texts);
+  margin-block-end: 10px;
+}
+
+.cards div p:last-child {
+  font-family: Roboto;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--buttons);
+}
+
+/* cards */
