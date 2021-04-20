@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --grey-background: #f2f2f2;
   --buttons: #636c76;
@@ -102,4 +108,98 @@ body {
   color: var(--buttons);
 }
 
-/* cards */
+/* Progress Bar */
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar div:first-child {
+  width: 100%;
+  display: flex;
+  height: 20px;
+  align-items: center;
+  position: relative;
+}
+
+.progress-bar div:first-child hr:first-child {
+  height: 4px;
+  width: 50%;
+  border: 2px solid var(--selection);
+  border-radius: 2px;
+}
+
+.progress-bar div:first-child hr {
+  height: 4px;
+  width: 50%;
+  border: 2px solid var(--hide-grey);
+  border-radius: 2px;
+}
+
+.progress-bar div div {
+  background: var(--grey-background);
+  border: 5px solid var(--selection);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: -2px -2px 2px #ffffff, 2px 2px 2px rgba(0, 0, 0, 0.25),
+    inset -4px -4px 2px #ffffff, inset 4px 4px 2px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  left: calc(50% - 10px);
+}
+
+.progress-bar .time {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.progress-bar .time p {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: bold;
+  color: var(--texts);
+}
+
+/* buttons */
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons div {
+  box-shadow: -4px -4px 10px #ffffff, 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons img {
+  max-width: 100%;
+}
+
+.buttons .option {
+  width: 34px;
+  height: 34px;
+}
+
+.buttons .option img {
+  height: 16px;
+}
+
+.buttons .selection {
+  width: 54px;
+  height: 54px;
+}
+
+.buttons .play-pause {
+  width: 88px;
+  height: 88px;
+}
